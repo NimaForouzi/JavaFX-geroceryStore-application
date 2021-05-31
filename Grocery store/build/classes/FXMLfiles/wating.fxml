@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anc1" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contorollers.WatingController">
+   <children>
+      <ImageView fx:id="egg" layoutX="508.0" layoutY="91.0">
+         <image>
+            <Image url="@../photos/icons8-eggs-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iceCream" layoutX="506.0" layoutY="380.0">
+         <image>
+            <Image url="@../photos/icons8-ice-cream-cone-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="brocly" layoutX="51.0" layoutY="431.0">
+         <image>
+            <Image url="@../photos/icons8-broccoli-96.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="195.0" prefHeight="143.0" prefWidth="794.0" text="Product not available! we are Moving the product from the warehouse to the store">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <ImageView fx:id="berger" layoutX="56.0" layoutY="48.0">
+         <image>
+            <Image url="@../photos/icons8-hamburger-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="donat" layoutX="251.0" layoutY="345.0">
+         <image>
+            <Image url="@../photos/icons8-doughnut-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="youghort" layoutX="279.0" layoutY="46.0">
+         <image>
+            <Image url="@../photos/icons8-yogurt-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cocounot" layoutX="641.0" layoutY="300.0">
+         <image>
+            <Image url="@../photos/icons8-coconut-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="honey" layoutX="669.0" layoutY="22.0">
+         <image>
+            <Image url="@../photos/icons8-honey-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="311.0" layoutY="292.0" text="PLEASE WAIT...">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

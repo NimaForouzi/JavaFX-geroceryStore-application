@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contorollers.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="-2.0" prefHeight="126.0" prefWidth="800.0" text="« welcome to &quot;Easy Buy&quot; grocery store »">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="136.0" layoutY="98.0" prefHeight="96.0" prefWidth="661.0" text="hey! Thank`s for your trust in our store, please pick your required Items:">
+         <font>
+            <Font name="Grand Kufi" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="151.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="43.0" layoutY="196.0" onMouseClicked="#frize">
+         <image>
+            <Image url="@../photos/icons8-kawaii-french-fries-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="300.0" text="French fries">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="197.0" layoutY="196.0" onMouseClicked="#bread">
+         <image>
+            <Image url="@../photos/icons8-bread-96.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="195.0" layoutY="300.0" text="Baguette bread">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="342.0" layoutY="196.0" onMouseClicked="#iceCream">
+         <image>
+            <Image url="@../photos/icons8-ice-cream-cone-96.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="363.0" layoutY="300.0" text="ice cream">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="488.0" layoutY="199.0" onMouseClicked="#youghort">
+         <image>
+            <Image url="@../photos/icons8-yogurt-96.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="516.0" layoutY="300.0" text="yogurt">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="644.0" layoutY="201.0" onMouseClicked="#berger">
+         <image>
+            <Image url="@../photos/icons8-hamburger-96.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="646.0" layoutY="300.0" text="Hamburgers">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="40.0" layoutY="383.0" onMouseClicked="#coconut">
+         <image>
+            <Image url="@../photos/icons8-coconut-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="479.0" text="Coconut">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="474.0" text="egg">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="338.0" layoutY="378.0" onMouseClicked="#honey">
+         <image>
+            <Image url="@../photos/icons8-honey-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="364.0" layoutY="474.0" text="honey">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="490.0" layoutY="374.0" onMouseClicked="#donate">
+         <image>
+            <Image url="@../photos/icons8-doughnut-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="503.0" layoutY="474.0" text="Doughnut">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="660.0" layoutY="474.0" text="broccoli">
+         <font>
+            <Font name="Aparajita Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="197.0" layoutY="374.0" onMouseClicked="#egg">
+         <image>
+            <Image url="@../photos/icons8-eggs-96.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="641.0" layoutY="374.0" onMouseClicked="#brucly">
+         <image>
+            <Image url="@../photos/icons8-broccoli-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="88.0" layoutX="56.0" layoutY="93.0">
+         <image>
+            <Image url="@../photos/iconfinder_ic_shopping_cart_48px_3669231.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="itemCounter" alignment="CENTER" layoutX="80.0" layoutY="98.0" prefHeight="50.0" prefWidth="40.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="635.0" layoutY="522.0" mnemonicParsing="false" onAction="#shopingDoneButton" prefHeight="64.0" prefWidth="133.0" text="End Shopping">
+         <font>
+            <Font name="Yu Mincho Demibold" size="17.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.51" specularConstant="1.25" specularExponent="40.0" surfaceScale="2.9">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label fx:id="addItemLabel" alignment="CENTER" layoutX="58.0" layoutY="86.0" prefHeight="50.0" prefWidth="400.0" text="Item Addet to your Basket " textFill="RED" visible="false">
+         <font>
+            <Font name="B Traffic Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
